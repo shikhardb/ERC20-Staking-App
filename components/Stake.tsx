@@ -76,7 +76,7 @@ export default function Stake() {
         <Card p={5} m={5}>
           <Box textAlign={"center"} mb={5}>
             <Text fontSize={"xl"} fontWeight={"bold"}>
-              Stake Token:
+              Total Staked {" $" + stakeTokenBalance?.symbol} :
             </Text>
             <Skeleton isLoaded={!loadingStakeInfo && !loadingStakeTokenBalance}>
               {stakeInfo && stakeInfo[0] ? (
@@ -157,7 +157,7 @@ export default function Stake() {
             textAlign={"center"}
           >
             <Text fontSize={"xl"} fontWeight={"bold"}>
-              Reward Token:
+              Total Rewarded {" $" + rewardTokenBalance?.symbol}:
             </Text>
             <Skeleton
               isLoaded={!loadingStakeInfo && !loadingRewardTokenBalance}
